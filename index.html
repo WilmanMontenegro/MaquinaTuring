@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Maquina de Turing</title>	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/scroll.css">
+	<link rel="stylesheet" href="./css/cinta.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+	<body>
+		<div class="titulo">
+			<h1>Maquina de Turing</h1>
+			<label id="subtitulo">Maquina de turing que cambia las <strong>bes</strong> por <strong> aes</strong> </label>
+		</div>
+		<div class="rejilla">
+			<div id="entrada">
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon3">Palabra: </span>
+				</div>
+				<input type="text" class="form-control"  id="cadena" aria-describedby="basic-addon3">
+			</div>
+
+			<button id="compilar" class="btn btn-outline-success">Compilar</button>
+			<button id="reset" class="btn btn-outline-info">Resetear</button>
+
+			</div>
+
+			<div id="mynetwork"></div>
+
+		</div>
+		<div id="labels">
+			<label id="movlb" class="mr-2 ml-2">Movimientos: 0</label>
+			<label id="estadolb" class="mr-2 ml-2">Estado Actual: q1</label>
+		</div>
+		<div id="m-cinta">
+
+			<div id="cinta"></div>
+		</div>
+
+		<div id="opciones" class="rejilla2">
+
+
+			<div class="velocidad " tabindex="0">
+				<select class="form-control" >
+		<optgroup label="Velocidades">
+		<option value="1000">Lo más lento</option>
+		<option value="625">más lento</option>
+		<option value="375">lento</option>
+		<option value="250" selected>Normal</option>
+		<option value="100">Rápido</option>
+		<option value="50">Más rápido</option>
+		<option value="0">Lo más rápido</option>
+		</optgroup>
+		</select>
+			</div>
+
+			<div id="control" class="btn-toolbar">
+				<button id="paso" class="btn btn-primary btn-group mr-2 ml-2" >Paso a Paso</button>
+				<button id="iniciar" class="btn btn-success btn-group mr-2" >Iniciar</button>
+				<button id="pausar" class="btn btn-danger btn-group mr-2" >Pausar</button>
+			</div>
+
+
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js" integrity="sha512-XHDcSyqhOoO2ocB7sKOCJEkUjw/pQCJViP1ynpy+EGh/LggzrP6U/V3a++LQTnZT7sCQKeHRyWHfhN2afjXjCg==" crossorigin="anonymous"></script>
+		<script src="./js/maquina.js"></script>
+	</body>
+
+
+</html>
